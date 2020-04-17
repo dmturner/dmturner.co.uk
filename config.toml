@@ -1,6 +1,6 @@
-baseurl = "https://www.example.com/"
-title = "Black & Light"
-author = "David Hamp-Gonsalves"
+baseurl = "https://dmturner.co.uk"
+title = "D.M. Turner"
+author = "David Turner"
 canonifyurls = true
 languagecode = "en"
 theme = "black-and-light"
@@ -9,7 +9,7 @@ pygmentsstyle       = "bw"
 pygmentscodefences  = true
 
 [params]
-  sitename = "Black & Light"
+  sitename = "D.M. Turner"
   disableWebFonts = false
 
 [[menu.main]]
