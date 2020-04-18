@@ -14,9 +14,9 @@ pygmentscodefences  = true
   disableWebFonts = false
 
 
-#[[menu.main]]
-#    name = "About"
-#    url  = "/about"
+[[menu.main]]
+    name = "About me"
+    url  = "/about"
 #[[menu.main]]
 #    name = "Portfolio"
 #    url  = "#"

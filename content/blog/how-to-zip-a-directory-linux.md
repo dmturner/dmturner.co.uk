@@ -1,7 +1,7 @@
 ---
 title: "How to zip a directory in Linux"
 date: 2020-04-17T22:03:28+01:00
-draft: false
+draft: true
 ---
 Sooner or later you may need to zip up a folder - otherwise known a directory - on your linux machine. The code is needed is pretty simple:
 
