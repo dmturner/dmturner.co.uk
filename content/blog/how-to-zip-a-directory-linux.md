@@ -11,7 +11,7 @@ If you don't already have ```zip``` installed then you can grab it using the ```
 sudo apt install zip
 ```
 
-Once installed, the command needed zip a file or folder is pretty simple. It takes the following syntax:
+Once installed, the command needed to zip a file or folder is pretty simple. It takes the following syntax:
 
 ```bash
 zip [option] [archive_name.zip] [the_file_or_folder_to_compress]
@@ -42,3 +42,5 @@ There's plenty more you can do with this command by utilising the available opti
 ```bash
 man zip
 ```
+
+The ```zip``` command is especially useful for archiving log files or compressing entire directories so that they can be downloaded or transferred across servers.
