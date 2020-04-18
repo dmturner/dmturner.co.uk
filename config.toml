@@ -9,14 +9,14 @@ pygmentsstyle       = "monokai"
 pygmentscodefences  = true
 
 [params]
-  sitename = "David M Turner"
+  sitename = "David Turner"
   sitedesc = "Full stack web developer"
   disableWebFonts = false
 
 
-[[menu.main]]
-    name = "About me"
-    url  = "/about"
+#[[menu.main]]
+#    name = "About me"
+#    url  = "/about"
 #[[menu.main]]
 #    name = "Portfolio"
 #    url  = "#"

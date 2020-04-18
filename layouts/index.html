@@ -3,7 +3,7 @@
 <section id=content>
   <h2>Latest posts</h2>
   <ul class=posts_listing>
-    {{- range ( where .Site.RegularPages "Section" "blog" | first 3 ) }}
+    {{- range ( where .Site.RegularPages "Section" "blog" | first 10 ) }}
       <li>
         <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         <div class=date>
@@ -15,4 +15,3 @@
 </section>
 
 {{ partial "footer.html" . }}
-
