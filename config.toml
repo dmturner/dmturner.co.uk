@@ -9,8 +9,8 @@ pygmentsstyle       = "monokai"
 pygmentscodefences  = true
 
 [params]
-  sitename = "David Turner"
-  sitedesc = "something here"
+  sitename = "David M Turner"
+  sitedesc = "Full stack web developer and photographer"
   disableWebFonts = false
 
 
