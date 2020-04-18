@@ -1,4 +1,5 @@
 ---
+url: /How to zip a directory in Linux
 title: "How to zip a directory in Linux"
 date: 2020-04-17T22:03:28+01:00
 draft: false
@@ -8,6 +9,7 @@ Sooner or later you may need to zip up a folder - otherwise known a directory - 
 ```bash
 zip [option] your_new_file.zip the_folder_to_zip
 ```
+
 So a real-world example of the above logic might be something like this:
 
 ```bash
