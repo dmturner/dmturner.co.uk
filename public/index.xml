@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>D.M. Turner</title>
+    <link>https://dmturner.co.uk/</link>
+    <description>Recent content on D.M. Turner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 17 Apr 2020 18:14:07 +0100</lastBuildDate>
+    
+	<atom:link href="https://dmturner.co.uk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to zip a directory in Linux</title>
+      <link>https://dmturner.co.uk/blog/how-to-zip-a-directory-linux/</link>
+      <pubDate>Fri, 17 Apr 2020 22:03:28 +0100</pubDate>
+      
+      <guid>https://dmturner.co.uk/blog/how-to-zip-a-directory-linux/</guid>
+      <description>Sooner or later you may need to zip up a folder - otherwise known a directory - on your linux machine. The code is needed is pretty simple:
+zip [option] your_new_file.zip the_folder_to_zip So a real-world example of the above logic might be something like this:
+zip -r html_files.zip html We&amp;rsquo;re passing the -r option which simply stands for &amp;ldquo;recursive&amp;rdquo;. This means that the zip command will continue beyond the specified folder(s) and zip anything inside those folder also.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://dmturner.co.uk/about/</link>
+      <pubDate>Fri, 17 Apr 2020 18:14:07 +0100</pubDate>
+      
+      <guid>https://dmturner.co.uk/about/</guid>
+      <description>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</description>
+    </item>
+    
+  </channel>
+</rss>

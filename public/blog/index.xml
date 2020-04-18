@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on D.M. Turner</title>
+    <link>https://dmturner.co.uk/blog/</link>
+    <description>Recent content in Blogs on D.M. Turner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 17 Apr 2020 22:03:28 +0100</lastBuildDate>
+    
+	<atom:link href="https://dmturner.co.uk/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to zip a directory in Linux</title>
+      <link>https://dmturner.co.uk/blog/how-to-zip-a-directory-linux/</link>
+      <pubDate>Fri, 17 Apr 2020 22:03:28 +0100</pubDate>
+      
+      <guid>https://dmturner.co.uk/blog/how-to-zip-a-directory-linux/</guid>
+      <description>Sooner or later you may need to zip up a folder - otherwise known a directory - on your linux machine. The code is needed is pretty simple:
+zip [option] your_new_file.zip the_folder_to_zip So a real-world example of the above logic might be something like this:
+zip -r html_files.zip html We&amp;rsquo;re passing the -r option which simply stands for &amp;ldquo;recursive&amp;rdquo;. This means that the zip command will continue beyond the specified folder(s) and zip anything inside those folder also.</description>
+    </item>
+    
+  </channel>
+</rss>

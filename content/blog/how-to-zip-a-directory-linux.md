@@ -34,5 +34,6 @@ function callOnce (fn) {
     }
   };
 }
-````
+```
+Some text at the end of the article goes here.
 
