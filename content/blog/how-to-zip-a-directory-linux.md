@@ -1,9 +1,9 @@
 ---
-title: "How to zip a directory in Linux"
+title: "How to zip files and folders in Linux"
 date: 2020-04-17T22:03:28+01:00
 draft: false
 ---
-It's useful to know how to compress a file or folder using the terminal for those times that you're working remotley on a server and don't have access to the usual desktop compression tools. We can use the ```zip``` command to do this.
+It's useful to know how to compress a file or folder using the terminal for those times that you're working remotely on a server and don't have access to the usual desktop compression tools. We can use the ```zip``` command to do this.
 
 If you don't already have ```zip``` installed then you can grab it using the ```apt``` package manager:
 
@@ -11,7 +11,7 @@ If you don't already have ```zip``` installed then you can grab it using the ```
 sudo apt install zip
 ```
 
-Once installed, the command needed zip a file or folder is pretty simple. It takes the following synax:
+Once installed, the command needed zip a file or folder is pretty simple. It takes the following syntax:
 
 ```bash
 zip [option] [archive_name.zip] [the_file_or_folder_to_compress]
@@ -31,7 +31,13 @@ The above command assumes that we're in the same directory as the file or folder
 zip -r html.zip /var/www/html
 ```
 
-There's plenty more you can do with this command by utilising the available options when issuing the command. Take a look at the ```man``` pages to find out more.
+To compress a file rather than a folder we just specify the file name instead of the folder name:
+
+```bash
+zip -r log_files.zip /var/log/error.log
+```
+
+There's plenty more you can do with this command by utilising the available options when issuing the command. Take a look at the manual pages for ```zip``` to find out more:
 
 ```bash
 man zip
