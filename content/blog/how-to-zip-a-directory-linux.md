@@ -1,5 +1,4 @@
 ---
-url: /How to zip a directory in Linux
 title: "How to zip a directory in Linux"
 date: 2020-04-17T22:03:28+01:00
 draft: false
