@@ -5,6 +5,8 @@ canonifyurls = true
 languagecode = "en-gb"
 theme = "black-and-light"
 
+pygmentsstyle       = "monokai"
+pygmentscodefences  = true
 
 [params]
   sitename = "David Turner"
@@ -21,15 +23,3 @@ theme = "black-and-light"
 [[menu.main]]
     name = "Contact"
     url  = "#"
-
-[markup]
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ""
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    style = "monokai"
-    tabWidth = 4
