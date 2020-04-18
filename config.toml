@@ -10,16 +10,16 @@ pygmentscodefences  = true
 
 [params]
   sitename = "David M Turner"
-  sitedesc = "Full stack web developer and photographer"
+  sitedesc = "Full stack web developer"
   disableWebFonts = false
 
 
-[[menu.main]]
-    name = "About"
-    url  = "/about"
-[[menu.main]]
-    name = "Portfolio"
-    url  = "#"
-[[menu.main]]
-    name = "Contact"
-    url  = "#"
+#[[menu.main]]
+#    name = "About"
+#    url  = "/about"
+#[[menu.main]]
+#    name = "Portfolio"
+#    url  = "#"
+#[[menu.main]]
+#    name = "Contact"
+#    url  = "#"
