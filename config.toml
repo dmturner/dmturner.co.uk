@@ -5,8 +5,9 @@ canonifyurls = true
 languagecode = "en-gb"
 theme = "black-and-light"
 
-pygmentsstyle       = "bw"
+pygmentsstyle       = "monokai"
 pygmentscodefences  = true
+pygmentsUseClasses=true
 
 [params]
   sitename = "D.M. Turner"
