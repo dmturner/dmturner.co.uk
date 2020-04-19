@@ -5,10 +5,21 @@ draft: false
 ---
 It's useful to know how to compress a file or folder using the terminal for those times that you're working remotely on a server and don't have access to the usual desktop compression tools. We can use the ```zip``` command to do this.
 
-If you don't already have ```zip``` installed then you can grab it using the ```apt``` package manager:
+If you don't already have ```zip``` installed then you can grab it using the appropriate package manager for your current distribution:
 
+#### ubuntu
 ```bash
 sudo apt install zip
+```
+
+#### Redhat / CentOS / Fedora
+```bash
+sudo yum install zip
+```
+
+#### Arch / Manjaro
+```bash
+sudo pacman -S zip
 ```
 
 Once installed, the command needed to zip a file or folder is pretty simple. It takes the following syntax:
@@ -17,7 +28,7 @@ Once installed, the command needed to zip a file or folder is pretty simple. It 
 zip [option] [archive_name.zip] [the_file_or_folder_to_compress]
 ```
 
-If, for example, we want to compress the /html folder on our server we could use the following command:
+If, for example, we're currently in a directory that contains a folder called 'html' and we want to compress that folder we could use the following command:
 
 ```bash
 zip -r html.zip html
@@ -25,7 +36,7 @@ zip -r html.zip html
 
 Here we've specified the name of the new .zip file followed by the actual directory to zip up. We're also passing the ```-r``` option which simply stands for "recursive". This means that the zip command will continue beyond the specified folder and also zip up the files and folders contained within the specified folder.
 
-The above command assumes that we're in the same directory as the file or folder that we want to zip up. Remember to specify the path of the folder to zip if you're somewhere else within the file system:
+Remember that the above command assumes that we're in the same directory as the file or folder that we want to zip up. If we're somewhere else within the file system then we need to provide the full path the folder that we want to zip up:
 
 ```bash
 zip -r html.zip /var/www/html
