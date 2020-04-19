@@ -12,7 +12,7 @@ If you don't already have ```zip``` installed, then you can grab it using the ap
 sudo apt install zip
 ```
 
-#### Redhat / CentOS / Fedora
+#### Red Hat / CentOS / Fedora
 ```bash
 sudo yum install zip
 ```
