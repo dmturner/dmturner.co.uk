@@ -36,7 +36,6 @@
   * {
     border:0;
     font:inherit;
-    font-size:120%;
     vertical-align:baseline;
     margin:0;
     padding:0;
@@ -44,9 +43,13 @@
     text-decoration-skip: ink;
   }
 
+  html {
+    font-size:62.5%;
+  }
+
   body {
     font-family:'PT Serif', 'Myriad Pro', Myriad, sans-serif;
-    font-size:1rem;
+    font-size:1.8rem;
     line-height:160%;
     color:#1d1313;
     max-width:700px;
@@ -55,7 +58,6 @@
 
   p {
     margin: 20px 0;
-    font-size: 1rem;
   }
 
   #content a {
@@ -87,7 +89,7 @@
   }
 
   pre, code {
-    font: 0.8rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font: 1.4rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
     /* background-color: #f3f3f3!important; */
     color: #ffffff;
     border-radius: 5px; 
@@ -104,7 +106,6 @@
     word-wrap: normal;
     padding: 16px;
     overflow: auto;
-    font-size: 85%;
     line-height: 1.45;
   }
 
@@ -151,7 +152,7 @@
   
   h4 {
     font-weight: normal;
-    font-family: 'PT Serif', 'Myriad Pro', Myriad, sans-serif;
+    font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
     background: #333;
     display: inline-block;
     position: relative;
@@ -160,7 +161,7 @@
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     color: #fff;
-    font-size: 0.8rem;
+    font-size: 1.4rem;
     z-index: 10;
   }
   
@@ -194,7 +195,7 @@
   blockquote:before,blockquote:after {
     font-family:"PT Serif",serif;
     content:'\201C';
-    font-size:35px;
+    font-size:3rem;
     color:#333;
   }
 
@@ -210,16 +211,16 @@
   }
 
   h1 {
-    font-size:35px;
+    font-size:3rem;
   }
 
   h2 {
-    font-size:28px;
+    font-size:2rem;
   }
 
   h3 {
-    font-size:22px;
-    margin-top:18px;
+    font-size:1.75rem;
+    margin-top:1rem;
   }
 
   h1 a,h2 a,h3 a {
@@ -227,12 +228,12 @@
   }
 
   h1,h2 {
-    margin-top:28px;
+    margin-top:2rem;
   }
 
   #sub-header, .date {
     color:#333;
-    font-size:0.8rem;
+    font-size:1.4rem;
   }
 
   #sub-header {
@@ -279,7 +280,6 @@
   #content {
     text-align:left;
     width:100%;
-    font-size:1rem;
     padding:60px 0 80px;
   }
 
@@ -288,7 +288,14 @@
   }
 
   #content h2 {
-    font-size:25px;
+    font-size:2.4rem;
+  }
+
+  #content h2.latest-posts img {
+    display: inline;
+    height: 2.6rem;
+    width: auto;
+    margin: 0 1rem 0 0;
   }
 
   #content .entry-content {
@@ -300,8 +307,8 @@
   }
 
   #content h1 {
-    font-size:3rem;
-    line-height: 3.5rem;
+    font-size:5rem;
+    line-height: 6rem;
   }
 
   .highlight {
@@ -315,7 +322,7 @@
   }
 
   .posts_listing li {
-    margin:0 0 25px 15px;
+    margin:0 0 25px 0px;
   }
 
   .posts_listing li a:hover,#nav a:hover {
@@ -371,7 +378,6 @@
   
   .footer span.copyright {
     font-family: "PT Serif",serif;
-    font-size: 1rem;
   }
 
   @media (max-width: 750px) {

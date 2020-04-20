@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 
 <section id=content>
-  <h2>Latest posts</h2>
+  <h2 class=latest-posts><img src=icons/notepad.svg />Latest posts</h2>
   <ul class=posts_listing>
     {{- range ( where .Site.RegularPages "Section" "blog" | first 10 ) }}
       <li>
