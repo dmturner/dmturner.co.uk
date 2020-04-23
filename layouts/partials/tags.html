@@ -1,3 +1,5 @@
 
 <!-- layouts/partials/tags.html -->
-{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}
+Tagged with: {{ range $name, $items := .Site.Taxonomies.tags }}
+<a href="{{ $.Site.BaseURL }}tags/{{ $name | urlize | lower  }}">{{ $name }}</a>
+{{ end }}

@@ -12,7 +12,7 @@
           <h1>{{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}</h1>
           <!-- <h2 class="subheading"></h2> -->
           <span class="meta">
-            {{ if .Params.date }} {{ dateFormat "January 2, 2006" .Date }} · {{ partial "tags.html" . }} · {{ .ReadingTime }} minute read {{ end }}
+            {{ if .Params.date }} {{ dateFormat "January 2, 2006" .Date }} · {{ .ReadingTime }} minute read {{ end }}
           </span>
         </div>
       </div>
@@ -26,6 +26,13 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         {{ .Content }}
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <span class="meta tags">
+          {{ partial "tags.html" . }}
+        </span>
       </div>
     </div>
   </div>
