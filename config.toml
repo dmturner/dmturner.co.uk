@@ -4,6 +4,8 @@ author = "David Turner"
 canonifyurls = true
 languagecode = "en-gb"
 
+
+
 enableEmoji = true
 
 
@@ -19,6 +21,7 @@ pygmentscodefences  = true
   sitename = "David Turner"
   sitedesc = "Full-stack web developer based in Lancashire, UK"
   disableWebFonts = false
+  builtWithText = "Built with :heart: using "
 
 
 [[menu.main]]

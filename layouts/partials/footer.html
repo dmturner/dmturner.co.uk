@@ -1,9 +1,15 @@
 <!-- Footer -->
 <footer>
-  <div class="container">
+  <div class="container text-muted">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <ul class="list-inline text-center">
+      <div class="col-lg-6 col-md-12 mx-auto text-center">
+        <p>
+          <img class="footer-hugo-netlify" src="/img/hugo-logo-wide.svg" alt="">
+          <img class="footer-hugo-netlify" src="/img/netlify-logo.svg" alt="">
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-12 mx-auto text-center">
+        <ul class="list-inline footer-social-icons">
           <li class="list-inline-item">
             <a target="_blank" href="https://github.com/dmturner">
               <span class="fa-stack fa-lg">
@@ -21,6 +27,10 @@
             </a>
           </li>
         </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
         <p class="copyright text-muted">Copyright &copy; David Turner {{ dateFormat "2006" now }}</p>
       </div>
     </div>
