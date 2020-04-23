@@ -1,27 +1,44 @@
 {{ partial "header.html" . }}
 
-<section id=content>
-  <h1>{{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}</h1>
 
-  {{ if .Params.date }}
-    <div id=sub-header>
-      {{ dateFormat "January 2, 2006" .Date }} · {{ .ReadingTime }} minute read
+
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('img/post-bg.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-heading">
+          <h1>{{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}</h1>
+          <h2 class="subheading">Sub heading here</h2>
+          <span class="meta">Posted by
+            <a href="#">Start Bootstrap</a>
+            {{ if .Params.date }} {{ dateFormat "January 2, 2006" .Date }} · {{ .ReadingTime }} minute read {{ end }}</span>
+        </div>
+      </div>
     </div>
+  </div>
+</header>
+
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</article>
+
+<div id=links>
+  {{ if .PrevInSection }}
+    <a class="basic-alignment left" href="{{.PrevInSection.Permalink}}">&laquo; {{.PrevInSection.Title}}</a>
   {{ end }}
-
-  <div class="entry-content">
-    {{ .Content }}
-  </div>
-
-  <div id=links>
-    {{ if .PrevInSection }}
-      <a class="basic-alignment left" href="{{.PrevInSection.Permalink}}">&laquo; {{.PrevInSection.Title}}</a>
-    {{ end }}
-    {{ if .NextInSection }}
-      <a class="basic-alignment left" href="{{.NextInSection.Permalink}}">{{.NextInSection.Title}} &raquo;</a>
-    {{ end }}
-  </div>
-</section>
+  {{ if .NextInSection }}
+    <a class="basic-alignment left" href="{{.NextInSection.Permalink}}">{{.NextInSection.Title}} &raquo;</a>
+  {{ end }}
+</div>
 
 {{ partial "footer.html" . }}
 

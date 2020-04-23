@@ -1,31 +1,50 @@
 {{ partial "header.html" . }}
 
-<section id=content>
-  <h2 class=latest-posts><img src=icons/notepad.svg />Latest posts</h2>
-  <ul class=posts_listing>
-    {{- range ( where .Site.RegularPages "Section" "blog" | first 10 ) }}
-      <li>
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <div class=date>
-          {{ dateFormat "January 2, 2006" .Date }} · {{ .ReadingTime }} minute read
-        </div>
-      </li>
-    {{ end }}
-  </ul>
-</section>
 
-<section id="contact-form" style="display: none;">
-  <form name="contact" netlify>
-    <p>
-      <label>Name <input type="text" name="name" /></label>
-    </p>
-    <p>
-      <label>Email <input type="email" name="email" /></label>
-    </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
-  </form>
-</section>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/nature-forest-trees-fog-4827.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>{{ .Site.Params.sitename }}</h1>
+            <span class="subheading">{{ .Site.Params.sitedesc }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        {{- range ( where .Site.RegularPages "Section" "blog" | first 10 ) }}
+        <div class="post-preview">
+          <a href="{{ .Permalink }}">
+            <h2 class="post-title">
+              {{ .Title }}
+            </h2>
+            <h3 class="post-subtitle">
+              Subtitle here
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Start Bootstrap</a>
+            on {{ dateFormat "January 2, 2006" .Date }} · {{ .ReadingTime }} minute read</p>
+        </div>
+        <hr>
+        {{ end }}
+        <!-- Pager -->
+        <div class="clearfix">
+          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 {{ partial "footer.html" . }}

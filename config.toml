@@ -3,7 +3,7 @@ title = "David Turner - Full stack web developer"
 author = "David Turner"
 canonifyurls = true
 languagecode = "en-gb"
-theme = "black-and-light"
+#theme = "black-and-light"
 
 pygmentsstyle       = "monokai"
 pygmentscodefences  = true
@@ -14,12 +14,12 @@ pygmentscodefences  = true
   disableWebFonts = false
 
 
-#[[menu.main]]
-#    name = "About me"
-#    url  = "/about"
-#[[menu.main]]
-#    name = "Portfolio"
-#    url  = "#"
-#[[menu.main]]
-#    name = "Contact"
-#    url  = "#"
+[[menu.main]]
+    name = "About me"
+    url  = "/about"
+[[menu.main]]
+    name = "Portfolio"
+    url  = "#"
+[[menu.main]]
+    name = "Contact"
+    url  = "#"
