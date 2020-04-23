@@ -22,7 +22,7 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         {{ range .Data.Pages }}
-        <div class="post-preview">
+        <div class="post-preview mb-5">
           <a href="{{ .Permalink }}">
             <h2 class="post-title">
               {{ .Title }}
@@ -33,7 +33,6 @@
             {{ dateFormat "January 2, 2006" .Date }} · {{ .ReadingTime }} minute read
           </p>
         </div>
-        <hr>
         {{ end }}
         <!-- Pager -->
         <!-- <div class="clearfix">
