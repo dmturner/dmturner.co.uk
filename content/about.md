@@ -6,9 +6,11 @@ type: "page"
 ---
 Hi, I'm a freelance full-stack web developer based in Lancashire, UK.
 
-When I'm not writing code I'm usually watching, thinking, reading about:
+I specialise in building easy-to-use content management systems - with a particular focus on the housing sector - in order to drive leads and sales for my clients.
 
-- Rallying
-- Photography
-- Electronics
-- Amateur radio
+When I'm not writing code I'm usually watching/thinking/reading about:
+
+- Rallying :car:
+- Photography :camera:
+- Electronics :battery:
+- Amateur radio :radio:

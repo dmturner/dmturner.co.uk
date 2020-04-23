@@ -4,6 +4,8 @@ author = "David Turner"
 canonifyurls = true
 languagecode = "en-gb"
 
+enableEmoji = true
+
 
 [permalinks]
   blog = "/:title/"
