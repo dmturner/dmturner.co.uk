@@ -7,17 +7,17 @@ It's useful to know how to compress a file or folder using the terminal for thos
 
 If you don't already have ```zip``` installed, then you can grab it using the appropriate package manager for your current distribution:
 
-#### ubuntu
+##### Ubuntu
 ```bash
 sudo apt install zip
 ```
 
-#### Red Hat / CentOS / Fedora
+##### Red Hat / CentOS / Fedora
 ```bash
 sudo yum install zip
 ```
 
-#### Arch / Manjaro
+##### Arch / Manjaro
 ```bash
 sudo pacman -S zip
 ```

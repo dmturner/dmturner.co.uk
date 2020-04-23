@@ -29,13 +29,11 @@
             <h2 class="post-title">
               {{ .Title }}
             </h2>
-            <h3 class="post-subtitle">
-              Subtitle here
-            </h3>
+            <!-- <h3 class="post-subtitle"></h3> -->
           </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on {{ dateFormat "January 2, 2006" .Date }} · {{ .ReadingTime }} minute read</p>
+          <p class="post-meta">
+            {{ dateFormat "January 2, 2006" .Date }} · {{ .ReadingTime }} minute read
+          </p>
         </div>
         <hr>
         {{ end }}

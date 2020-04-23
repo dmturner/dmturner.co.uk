@@ -1,5 +1,5 @@
 baseurl = "https://dmturner.co.uk"
-title = "David Turner - Full stack web developer"
+title = "David Turner - Full-stack web developer"
 author = "David Turner"
 canonifyurls = true
 languagecode = "en-gb"
@@ -9,17 +9,18 @@ pygmentsstyle       = "monokai"
 pygmentscodefences  = true
 
 [params]
+  siteshorturl = "dmturner.co.uk"
   sitename = "David Turner"
-  sitedesc = "Full stack web developer"
+  sitedesc = "Full-stack web developer"
   disableWebFonts = false
 
 
 [[menu.main]]
     name = "About me"
     url  = "/about"
-[[menu.main]]
-    name = "Portfolio"
-    url  = "#"
-[[menu.main]]
-    name = "Contact"
-    url  = "#"
+#[[menu.main]]
+#    name = "Portfolio"
+#    url  = "#"
+#[[menu.main]]
+#    name = "Contact"
+#    url  = "#"
