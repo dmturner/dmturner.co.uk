@@ -2,6 +2,7 @@
 title: "How to zip files and folders in Linux"
 date: 2020-04-17T22:03:28+01:00
 draft: false
+tags: ["tag1", "tag2"]
 ---
 It's useful to know how to compress a file or folder using the terminal for those times that you're working remotely on a server and don't have access to the usual desktop compression tools. We can use the ```zip``` command to do this.
 
