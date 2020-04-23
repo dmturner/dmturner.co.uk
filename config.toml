@@ -4,13 +4,18 @@ author = "David Turner"
 canonifyurls = true
 languagecode = "en-gb"
 
+
+[permalinks]
+  blog = "/:title/"
+
+
 pygmentsstyle       = "monokai"
 pygmentscodefences  = true
 
 [params]
   siteshorturl = "dmturner.co.uk"
   sitename = "David Turner"
-  sitedesc = "Full-stack web developer"
+  sitedesc = "Full-stack web developer based in Lancashire, UK"
   disableWebFonts = false
 
 
