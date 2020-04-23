@@ -3,7 +3,6 @@ title = "David Turner - Full-stack web developer"
 author = "David Turner"
 canonifyurls = true
 languagecode = "en-gb"
-#theme = "black-and-light"
 
 pygmentsstyle       = "monokai"
 pygmentscodefences  = true
@@ -16,7 +15,7 @@ pygmentscodefences  = true
 
 
 [[menu.main]]
-    name = "About me"
+    name = "About"
     url  = "/about"
 #[[menu.main]]
 #    name = "Portfolio"
