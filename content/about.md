@@ -12,6 +12,7 @@ I specialise in building easy-to-use content management systems - with a particu
 
 When I'm not writing code I'm usually watching/thinking/reading about:
 
+- Web development :laptop:
 - Rallying :car:
 - Photography :camera:
 - Electronics :battery:
