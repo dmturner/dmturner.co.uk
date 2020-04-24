@@ -12,7 +12,7 @@
     {{ if .Site.Params.description }}<meta name="description" content="{{ .Site.Params.description }}">{{ end }}
 
     <!-- Bootstrap core CSS -->
-    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+    <link defer href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
 
     {{ if not .Site.Params.disableWebFonts }}
     <!-- Custom fonts for this template -->
@@ -22,7 +22,7 @@
     {{ end }}
 
     <!-- Custom styles for this template -->
-    <link href="/css/clean-blog.min.css" rel="stylesheet"> 
+    <link defer href="/css/clean-blog.min.css" rel="stylesheet"> 
 
     <title>
       {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
