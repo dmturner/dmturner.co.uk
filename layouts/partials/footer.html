@@ -70,5 +70,11 @@
   gtag('config', 'UA-163886145-1');
 </script>
 
+<script>
+  // Use the global...
+  var pattern = GeoPattern.generate('{{ .Title }}');
+  $('#gallerybg').css('background-image', pattern.toDataUrl());
+</script>
+
 </body>
 </html>
