@@ -2,13 +2,13 @@
 title: "About"
 date: 2020-04-17T18:14:07+01:00
 draft: false
-type: "page"
+type: "about"
 ---
 ##### Me me me 
 
 Hi :wave:, I'm a freelance full-stack web developer based in Lancashire, UK.
 
-I specialise in building easy-to-use CMS powered websites - with a particular focus on the housing sector - in order to drive leads and sales for my clients.
+I specialise in building easy-to-use CMS powered websites --- with a particular focus on the housing sector --- in order to drive leads and sales for my clients.
 
 When I'm not writing code I'm usually watching/thinking/reading about:
 
