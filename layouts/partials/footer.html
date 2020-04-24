@@ -71,10 +71,11 @@
 </script>
 
 <script>
-  // Use the global...
-  var pattern = GeoPattern.generate('{{ .Title }}');
-  $('#gallerybg').css('background-image', pattern.toDataUrl());
+  $('#gallerybg').geopattern('{{ .Title }}');
 </script>
+
+
+
 
 </body>
 </html>
