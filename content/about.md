@@ -8,7 +8,7 @@ type: "page"
 
 Hi :wave:, I'm a freelance full-stack web developer based in Lancashire, UK.
 
-I specialise in building easy-to-use content management systems - with a particular focus on the housing sector - in order to drive leads and sales for my clients.
+I specialise in building easy-to-use CMS powered websites - with a particular focus on the housing sector - in order to drive leads and sales for my clients.
 
 When I'm not writing code I'm usually watching/thinking/reading about:
 

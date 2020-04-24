@@ -60,6 +60,13 @@
 <script defer src="/js/clean-blog.min.js"></script>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script> <!-- optional -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
+<script>
+  $('#gallerybg').geopattern('{{ .Title }}');
+</script>
+
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script defer async src="https://www.googletagmanager.com/gtag/js?id=UA-163886145-1"></script>
 <script>
@@ -69,12 +76,6 @@
 
   gtag('config', 'UA-163886145-1');
 </script>
-
-<script>
-  $('#gallerybg').geopattern('{{ .Title }}');
-</script>
-
-
 
 
 </body>
