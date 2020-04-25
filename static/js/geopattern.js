@@ -1,1 +1,0 @@
-$('#gallerybg').geopattern('{{ .Title }}');
