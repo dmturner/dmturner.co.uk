@@ -1,5 +1,5 @@
 
 <!-- layouts/partials/tags.html -->
 Tagged with: {{ range $name, $items := .Site.Taxonomies.tags }}
-<a href="{{ $.Site.BaseURL }}tags/{{ $name | urlize | lower  }}">{{ $name }}</a>
+<a href="{{ $.Site.BaseURL }}tags/{{ $name | urlize | lower  }}"><span class='dot'></span>#{{ $name }}</a>
 {{ end }}

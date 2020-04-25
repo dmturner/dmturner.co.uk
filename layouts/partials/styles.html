@@ -1,6 +1,10 @@
 <style>
 /* Custom styles here */
 
+a:hover {
+  cursor: pointer;
+}
+
 .homepage-gallery, .about-gallery, .internal-gallery {
   background-size: auto!important; 
   background-repeat: repeat!important; 
@@ -63,7 +67,35 @@ footer ul.footer-social-icons {
 }
 
 article .tags a {
-  text-decoration: underline;
+  text-decoration: none;
+  background-color: #eee;
+  padding: 3px 6px;
+  border-radius: 5px;
+  color: #333;
+  margin: 0 0.2rem 0.5rem 0;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+
+article .tags a:hover {
+  bottom: 3px;
+  background-color: #0085a1;
+  color: #fff;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  bottom: 1px;
+  margin-right: 6px;
+  border: 1px solid #ccc;
 }
 
 </style>

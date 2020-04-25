@@ -35,17 +35,25 @@
         </span>
       </div>
     </div>
+    <div class="row mb-5">
+      <div class="col-lg-6 col-md-12 mx-auto mb-3">
+        {{ if .PrevInSection }}
+        <span class="meta previous">
+          <a class="btn btn-primary btn-block" href="{{.PrevInSection.Permalink}}">&laquo; {{.PrevInSection.Title}}</a>
+        </span>
+        {{ end }}
+      </div>
+      <div class="col-lg-6 col-md-12 mx-auto mb-3">
+        {{ if .NextInSection }}
+        <span class="meta next">
+          <a class="btn btn-primary btn-block" href="{{.NextInSection.Permalink}}">{{.NextInSection.Title}} &raquo;</a>
+        </span>
+        {{ end }}
+      </div>
+    </div>
   </div>
 </article>
 
-<div id=links>
-  {{ if .PrevInSection }}
-    <a class="basic-alignment left" href="{{.PrevInSection.Permalink}}">&laquo; {{.PrevInSection.Title}}</a>
-  {{ end }}
-  {{ if .NextInSection }}
-    <a class="basic-alignment left" href="{{.NextInSection.Permalink}}">{{.NextInSection.Title}} &raquo;</a>
-  {{ end }}
-</div>
 
 {{ partial "footer.html" . }}
 
