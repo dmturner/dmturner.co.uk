@@ -19,38 +19,16 @@
   <div class="container mb-5">
 
 
-<div class="row">
-    <div class="col">
-        <ul>
-            {{ range .Site.Taxonomies.tags }}
-                    <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
-            {{ end }}
-        </ul>
-    </div>
-</div>
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
 
-
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        {{- range ( where .Site.RegularPages "Section" "blog" | first 10 ) }}
-        <div class="post-preview mb-5">
-          <a href="{{ .Permalink }}">
-            <h2 class="post-title">
-              {{ .Title }}
-            </h2>
-            <!-- <h3 class="post-subtitle"></h3> -->
-          </a>
-          <p class="post-meta">
-            {{ dateFormat "January 2, 2006" .Date }} · {{ .ReadingTime }} minute read
-          </p>
-        </div>
+        {{ range .Site.Taxonomies.tags }}
+          <a class="btn btn-large btn-secondary" href="{{ .Page.Permalink }}">#{{ .Page.Title }} <span class="badge badge-info">{{ .Count }}</span></a>
         {{ end }}
-        <!-- Pager -->
-        <!-- <div class="clearfix">
-          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
-        </div> -->
-      </div>
+
     </div>
+  </div>
+  
   </div>
 
 {{ partial "footer.html" . }}

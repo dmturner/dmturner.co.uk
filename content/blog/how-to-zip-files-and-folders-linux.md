@@ -6,6 +6,7 @@ tags:
 - dev-ops
 - terminal
 
+
 ---
 It's useful to know how to compress a file or folder using the terminal for those times that you're working remotely on a server and don't have access to the usual desktop compression tools. We can use the `zip` command to do this.
 
