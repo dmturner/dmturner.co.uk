@@ -25,11 +25,11 @@ pygmentscodefences  = true
 
 
 [[menu.main]]
+    name = "Blog"
+    url  = "/blog"
+[[menu.main]]
     name = "About"
     url  = "/about"
-#[[menu.main]]
-#    name = "Portfolio"
-#    url  = "#"
 #[[menu.main]]
 #    name = "Contact"
 #    url  = "#"
