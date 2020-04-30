@@ -5,6 +5,12 @@ canonifyurls = true
 languagecode = "en-gb"
 
 
+[taxonomies]
+# Disable the default taxonomies
+# tag = "" <-- don't disable this one
+category = ""
+
+
 
 enableEmoji = true
 
