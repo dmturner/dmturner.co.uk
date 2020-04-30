@@ -11,18 +11,7 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     {{ if .Site.Params.description }}<meta name="description" content="{{ .Site.Params.description }}">{{ end }}
 
-    <!-- Bootstrap core CSS -->
-    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
-
-    {{ if not .Site.Params.disableWebFonts }}
-    <!-- Custom fonts for this template -->
-    <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic&display=swap' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,800&display=swap' rel='stylesheet' type='text/css'>
-    {{ end }}
-
-    <!-- Custom styles for this template -->
-    <link href="/css/clean-blog.min.css" rel="stylesheet"> 
+   
 
     <title>
       {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
