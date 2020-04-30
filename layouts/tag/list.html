@@ -17,12 +17,6 @@
 
   <!-- Main Content -->
   <div class="container mb-5">
-    <ul>
-        {{ range .Site.Taxonomies.tags }}
-                <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
-        {{ end }}
-    </ul>
-    
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         {{- range ( where .Site.RegularPages "Section" "blog" | first 10 ) }}
