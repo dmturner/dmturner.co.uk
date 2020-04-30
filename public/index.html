@@ -1,445 +1,292 @@
 <!DOCTYPE html>
 <html lang="en-gb">
   <head>
-	<meta name="generator" content="Hugo 0.69.0" />
+	<meta name="generator" content="Hugo 0.40.1" />
+
     <meta charset="utf-8">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="referrer" content="no-referrer">
+    <link rel="shortcut icon" href="https://dmturner.co.uk/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://dmturner.co.uk/favicon.ico" type="image/x-icon">
     
 
     
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400&display=swap' rel='stylesheet' type='text/css'>
+    <link href="https://dmturner.co.uk/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+
     
+    
+    <link href="https://dmturner.co.uk/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic&display=swap' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,800&display=swap' rel='stylesheet' type='text/css'>
+    
+
+    
+    <link href="https://dmturner.co.uk/css/clean-blog.min.css" rel="stylesheet"> 
 
     <title>
       
       
-        D.M. Turner
+         David Turner - Full-stack web developer 
       
     </title>
     <link rel="canonical" href="https://dmturner.co.uk/">
 
+    
     <style>
-  * {
-    border:0;
-    font:inherit;
-    font-size:100%;
-    vertical-align:baseline;
-    margin:0;
-    padding:0;
-    color: black;
-    text-decoration-skip: ink;
-  }
-
-  body {
-    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
-    font-size:17px;
-    line-height:160%;
-    color:#1d1313;
-    max-width:700px;
-    margin:auto;
-  }
-
-  p {
-    margin: 20px 0;
-  }
-
-  a img {
-    border:none;
-  }
-
-  img {
-    margin: 10px auto 10px auto;
-    max-width: 100%;
-    display: block;
-  }
-
-  .left-justify {
-    float: left;
-  }
-
-  .right-justify {
-    float:right;
-  }
-
-  pre, code {
-    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
-     
-    color: #ffffff;
-    border-radius: 5px; 
-  }
-
-  code {
-    font-size: 12px;
-    padding: 4px;
-    background-color: #272822;
-  }
-
-  pre {
-    margin-top: 0;
-    margin-bottom: 16px;
-    word-wrap: normal;
-    padding: 16px;
-    overflow: auto;
-    font-size: 85%;
-    line-height: 1.45;
-  }
-
-  pre>code {
-    padding: 0;
-    margin: 0;
-    font-size: 100%;
-    word-break: normal;
-    white-space: pre;
-     
-    border: 0;
-  }
-
-  pre code {
-    display: inline;
-    padding: 0;
-    margin: 0;
-    overflow: visible;
-    line-height: inherit;
-    word-wrap: normal;
-     
-    border: 0;
-  }
-
-  pre code::before,
-  pre code::after {
-    content: normal;
-  }
-
-  em,q,em,dfn {
-    font-style:italic;
-  }
-
-  .sans,html .gist .gist-file .gist-meta {
-    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
-  }
-
-  .mono,pre,code,tt,p code,li code {
-    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
-  }
-
-  .heading,.serif,h1,h2,h3 {
-    font-family:"Old Standard TT",serif;
-  }
-
-  strong {
-    font-weight:600;
-  }
-
-  q:before {
-    content:"\201C";
-  }
-
-  q:after {
-    content:"\201D";
-  }
-
-  del,s {
-    text-decoration:line-through;
-  }
-
-  blockquote {
-    font-family:"Old Standard TT",serif;
-    text-align:center;
-    padding:50px;
-  }
-
-  blockquote p {
-    display:inline-block;
-    font-style:italic;
-  }
-
-  blockquote:before,blockquote:after {
-    font-family:"Old Standard TT",serif;
-    content:'\201C';
-    font-size:35px;
-    color:#403c3b;
-  }
-
-  blockquote:after {
-    content:'\201D';
-  }
-
-  hr {
-    width:40%;
-    height: 1px;
-    background:#403c3b;
-    margin: 25px auto;
-  }
-
-  h1 {
-    font-size:35px;
-  }
-
-  h2 {
-    font-size:28px;
-  }
-
-  h3 {
-    font-size:22px;
-    margin-top:18px;
-  }
-
-  h1 a,h2 a,h3 a {
-    text-decoration:none;
-  }
-
-  h1,h2 {
-    margin-top:28px;
-  }
-
-  #sub-header, .date {
-    color:#403c3b;
-    font-size:13px;
-  }
-
-  #sub-header {
-    margin: 0 4px;
-  }
-
-  #nav h1 a {
-    font-size:35px;
-    color:#1d1313;
-    line-height:120%;
-  }
-
-  .posts_listing a,#nav a {
-    text-decoration: none;
-  }
-
-  li {
-    margin-left: 20px;
-  }
-
-  ul li {
-    margin-left: 5px;
-  }
-
-  ul li {
-    list-style-type: none;
-  }
-  ul li:before {
-    content:"\00BB \0020";
-  }
-
-  #nav ul li:before, .posts_listing li:before {
-    content:'';
-    margin-right:0;
-  }
-
-  #content {
-    text-align:left;
-    width:100%;
-    font-size:15px;
-    padding:60px 0 80px;
-  }
-
-  #content h1,#content h2 {
-    margin-bottom:5px;
-  }
-
-  #content h2 {
-    font-size:25px;
-  }
-
-  #content .entry-content {
-    margin-top:15px;
-  }
-
-  #content .date {
-    margin-left:3px;
-  }
-
-  #content h1 {
-    font-size:30px;
-  }
-
-  .highlight {
-    margin: 10px 0;
-  }
-
-  .posts_listing {
-    margin:0 0 50px;
-  }
-
-  .posts_listing li {
-    margin:0 0 25px 15px;
-  }
-
-  .posts_listing li a:hover,#nav a:hover {
-    text-decoration: underline;
-  }
-
-  #nav {
-    text-align:center;
-    position:static;
-    margin-top:60px;
-  }
-
-  #nav ul {
-    display: table;
-    margin: 8px auto 0 auto;
-  }
-
-  #nav li {
-    list-style-type:none;
-    display:table-cell;
-    font-size:15px;
-    padding: 0 20px;
-  }
-
-  #links {
-    margin: 50px 0 0 0;
-  }
-
-  #links :nth-child(2) {
-    float:right;
-  }
-
-  #not-found {
-    text-align: center;
-  }
-
-  #not-found a {
-    font-family:"Old Standard TT",serif;
-    font-size: 200px;
-    text-decoration: none;
-    display: inline-block;
-    padding-top: 225px;
-  }
-
-  @media (max-width: 750px) {
-    body {
-      padding-left:20px;
-      padding-right:20px;
-    }
-
-    #nav h1 a {
-      font-size:28px;
-    }
-
-    #nav li {
-      font-size:13px;
-      padding: 0 15px;
-    }
-
-    #content {
-      margin-top:0;
-      padding-top:50px;
-      font-size:14px;
-    }
-
-    #content h1 {
-      font-size:25px;
-    }
-
-    #content h2 {
-      font-size:22px;
-    }
-
-    .posts_listing li div {
-      font-size:12px;
-    }
-  }
-
-  @media (max-width: 400px) {
-    body {
-      padding-left:20px;
-      padding-right:20px;
-    }
-
-    #nav h1 a {
-      font-size:22px;
-    }
-
-    #nav li {
-      font-size:12px;
-      padding: 0 10px;
-    }
-
-    #content {
-      margin-top:0;
-      padding-top:20px;
-      font-size:12px;
-    }
-
-    #content h1 {
-      font-size:20px;
-    }
-
-    #content h2 {
-      font-size:18px;
-    }
-
-    .posts_listing li div{
-      font-size:12px;
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    *, #nav h1 a {
-      color: #FDFDFD;
-    }
-
-    body {
-      background: #121212;
-    }
-
-    pre, code {
-      background-color: #262626;
-    }
-
-    #sub-header, .date {
-      color: #BABABA;
-    }
-
-    hr {
-      background: #EBEBEB;
-    }
-  }
+ 
+
+a:hover {
+  cursor: pointer;
+}
+
+.homepage-gallery, .blog-gallery, .about-gallery, .internal-gallery {
+  background-size: auto!important; 
+  background-repeat: repeat!important; 
+  background-color: #0085a1!important;
+  background-image: url("/img/jigsaw.svg")!important; 
+}
+
+#gallerybg {
+  background-size: auto; 
+  background-repeat: repeat!important; 
+  background-color: #0085a1!important;
+   
+}
+
+p a {
+  color: #0085a1;
+}
+
+.single-page ul {
+  margin: 30px 0;
+}
+
+pre {
+  padding: 1rem;
+  background: #272822;
+  
+}
+
+code {
+  background: #272822;
+  padding: 0.3rem;
+  color: #fff!important;
+}
+
+pre code {
+  font-size: 1rem;
+}
+
+footer {
+  background-color: #eee;
+}
+
+footer .copyright {
+  font-size: 16px;
+}
+
+footer img.footer-hugo-netlify-github {
+  width: auto;
+  height: 1.5rem;
+  margin: 0 0.5rem;
+}
+
+footer img.footer-hugo-netlify-github.github {
+  width: auto;
+  height: 1.75rem;
+}
+
+footer a.footer-build-links {
+  text-decoration: none;
+}
+
+footer ul.footer-social-icons {
+  margin: 20px 0;
+}
+
+article .tags a {
+  text-decoration: none;
+  background-color: #eee;
+  padding: 3px 6px;
+  border-radius: 5px;
+  color: #333;
+  margin: 0 0.2rem 0.5rem 0;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+
+article .tags a:hover  {
+  background-color: #0085a1;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+article .tags a:hover .dot {
+  border: 1px solid #333;
+}
+
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  bottom: 1px;
+  margin-right: 6px;
+  border: 1px solid #ccc;
+}
+
 </style>
 
 
-    <link rel="alternate" type="application/rss+xml" href="https://dmturner.co.uk/index.xml" title="D.M. Turner" />
+    <link rel="alternate" type="application/rss" href="https://dmturner.co.uk/index.xml" title="David Turner - Full-stack web developer" />
     </head>
 
   <body>
-    <section id=nav>
-      <h1><a href="https://dmturner.co.uk/">David Turner</a></h1>
-      <span>something here</span>
-      <ul>
-        
-          <li><a href="https://dmturner.co.uk/about">About</a></li>
-        
-          <li><a href="#">Contact</a></li>
-        
-          <li><a href="#">Portfolio</a></li>
-        
-      </ul>
-    </section>
-
-
-<section id=content>
-  <ul class=posts_listing>
-      <li>
-        <h2><a href="https://dmturner.co.uk/blog/how-to-zip-a-directory-linux/">How to zip a directory in Linux</a></h2>
-        <div class=date>
-          April 2020
-        </div>
-      </li>
-    
-  </ul>
-</section>
 
   
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="https://dmturner.co.uk/">dmturner.co.uk</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://dmturner.co.uk/about">About</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  
+  <header class="masthead homepage-gallery">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>David Turner</h1>
+            <span class="subheading">Full-stack web developer based in Lancashire, UK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+  
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview mb-5">
+          <a href="https://dmturner.co.uk/blog/how-to-zip-files-and-folders-linux/">
+            <h2 class="post-title">
+              How to zip files and folders in Linux
+            </h2>
+            
+          </a>
+          <p class="post-meta">
+            April 17, 2020 · 2 minute read
+          </p>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+
+<footer>
+  <div class="container text-muted">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mx-auto text-center text-lg-left">
+        <p>
+          <a class="footer-build-links" target="_blank" href="https://gohugo.io/">
+            <img class="footer-hugo-netlify-github hugo" src="https://dmturner.co.uk/img/hugo-logo-wide.svg" alt="Hugo logo">
+          </a>
+          <a class="footer-build-links" target="_blank" href="https://app.netlify.com/sites/dmturner/deploys">
+            <img class="footer-hugo-netlify-github netlify" src="https://dmturner.co.uk/img/netlify-logo.svg" alt="Netlify logo">
+          </a>
+          <a class="footer-build-links" target="_blank" href="https://github.com/dmturner/dmturner.co.uk">
+            <img class="footer-hugo-netlify-github github" src="https://dmturner.co.uk/img/github-logo.png" alt="GitHub logo">
+          </a>
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-12 mx-auto text-center text-lg-right">
+        <ul class="list-inline footer-social-icons">
+          <li class="list-inline-item">
+            <a target="_blank" href="https://github.com/dmturner">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a target="_blank" href="https://twitter.com/chlorinekid">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a target="_blank" href="https://www.instagram.com/chlorinekid/">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <p class="copyright text-muted">Copyright &copy; David Turner 2020</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://dmturner.co.uk/vendor/jquery/jquery.min.js"></script>
+<script defer src="https://dmturner.co.uk/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+<script defer src="https://dmturner.co.uk/js/clean-blog.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
+<script>
+  $('#gallerybg').geopattern('David Turner - Full-stack web developer');
+</script>
+
+
+<script defer async src="https://www.googletagmanager.com/gtag/js?id=UA-163886145-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163886145-1');
+</script>
+
 </body>
 </html>
-
-

@@ -27,10 +27,10 @@
     <title>
       
       
-         About 
+         How to zip files and folders in Linux 
       
     </title>
-    <link rel="canonical" href="https://dmturner.co.uk/about/">
+    <link rel="canonical" href="https://dmturner.co.uk/blog/how-to-zip-files-and-folders-linux/">
 
     
     <style>
@@ -171,14 +171,18 @@ article .tags a:hover .dot {
 
 
 
-<header class="masthead about-gallery">
+
+<header id="gallerybg" class="masthead post-gallery">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="page-heading">
-          <h1>About</h1>
-          <span class="subheading">A bit about me</span>
+        <div class="post-heading">
+          <h1> How to zip files and folders in Linux </h1>
+          
+          <span class="meta">
+             April 17, 2020 · 2 minute read 
+          </span>
         </div>
       </div>
     </div>
@@ -186,44 +190,64 @@ article .tags a:hover .dot {
 </header>
 
 
-<div class="container mb-5 single-page">
-  <div class="row">
-    <div class="col-lg-8 col-md-10 mx-auto">
-      
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto single-post-content">
+        
 
-<h5 id="me-me-me">Me me me</h5>
+<p>It&rsquo;s useful to know how to compress a file or folder using the terminal for those times that you&rsquo;re working remotely on a server and don&rsquo;t have access to the usual desktop compression tools. We can use the <code>zip</code> command to do this.</p>
 
-<p>Hi 👋, I&rsquo;m a freelance full-stack web developer based in Lancashire, UK.</p>
+<p>If you don&rsquo;t already have <code>zip</code> installed, then you can grab it using the appropriate package manager for your current distribution:</p>
 
-<p>I specialise in building easy-to-use CMS powered websites &mdash; with a particular focus on the housing sector &mdash; in order to drive leads and sales for my clients.</p>
+<h5 id="ubuntu">Ubuntu</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install zip</code></pre></div>
+<h5 id="red-hat-centos-fedora">Red Hat / CentOS / Fedora</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo yum install zip</code></pre></div>
+<h5 id="arch-manjaro">Arch / Manjaro</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S zip</code></pre></div>
+<p>Once installed, the command needed to zip a file or folder is pretty simple. It takes the following syntax:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">zip <span style="color:#f92672">[</span>option<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>archive_name.zip<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>file_or_folder_to_compress<span style="color:#f92672">]</span></code></pre></div>
+<p>If, for example, we&rsquo;re currently in a directory that contains a folder called &ldquo;log_files&rdquo; and we want to compress that folder we could use the following command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">zip -r archive.zip log_files</code></pre></div>
+<p>Here we&rsquo;ve specified the name of the new .zip file followed by the actual directory to zip up. We&rsquo;re also passing the <code>-r</code> option which simply stands for &ldquo;recursive&rdquo;. This means that the zip file will include the entire directory tree of the specified folder.</p>
 
-<p>I&rsquo;ve been making things appear on the web since 1999 when I took my first steps into web development &mdash; if you can call it that &mdash; by writing a few lines of HTML and making a picture appear in Internet Explorer. It was a picture of a monkey from <a href="https://en.wikipedia.org/wiki/Monkey_Island_(series)">Monkey Island</a> if you must know.</p>
+<p>Remember that the above command assumes that we&rsquo;re in the same directory as the file or folder that we want to zip up. If we&rsquo;re somewhere else within the file system, then we need to provide the full path of the folder that we want to zip up:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">zip -r archive.zip /path/to/folder</code></pre></div>
+<p>To compress a file rather than a folder, we just specify the file name instead of the folder name. In this example, the <code>-r</code> option isn&rsquo;t needed as we&rsquo;re dealing with a single file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">zip archive.zip /path/to/file.log</code></pre></div>
+<p>There&rsquo;s plenty more you can do with this command by utilising the available options when issuing the command. Take a look at the manual pages for <code>zip</code> to find out more:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">man zip</code></pre></div>
+<p>The <code>zip</code> command is especially useful for archiving log files or compressing entire directories so that they can be downloaded or transferred across servers. Give it a go!</p>
 
-<p>In the 20 years since, I&rsquo;ve seen scores of web technologies come and go but I continue to strive to keep up-to-date with the many languages and frameworks that make up the modern web.</p>
+      </div>
+    </div>
+    <div class="row mt-5 mb-5">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <span class="meta tags">
+          
 
-<p>When I&rsquo;m not writing code I&rsquo;m usually watching/thinking/reading about:</p>
+Tagged with: 
+<a href="https://dmturner.co.uk/tags/dev-ops"><span class='dot'></span>#dev-ops</a>
 
-<ul>
-<li>Web development 💻</li>
-<li>Rallying 🚗</li>
-<li>Photography 📷</li>
-<li>Electronics 🔋</li>
-<li>Amateur radio 📻</li>
-</ul>
+<a href="https://dmturner.co.uk/tags/linux"><span class='dot'></span>#linux</a>
 
-<h5 id="this-website">This website</h5>
+<a href="https://dmturner.co.uk/tags/terminal"><span class='dot'></span>#terminal</a>
 
-<p>This site is built using <a href="https://gohugo.io/">Hugo</a>, a static site generator written in <a href="https://golang.org/">Go</a>. The site deploys from a git <a href="https://github.com/dmturner/dmturner.co.uk">repository on GitHub</a> where it&rsquo;s then built and hosted using <a href="https://app.netlify.com/sites/dmturner/deploys">Netlify</a>.</p>
-
-<p>Continuous deployment means that I can push any changes to the repository and have Netlify automatically detect the change, build and deploy the amends - usually within 30 seconds of me pushing the commits. Awesome!</p>
-
-<p>All blog post content is written in <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> which makes it easy to write and style content. It&rsquo;s also handy for making sure content is future-proof by not being tied to any particular CMS.</p>
-
-<p><img src="https://dmturner.co.uk/uploads/Animated-GIF-The-Secret-of-Monkey-Island-Character-Hanging-Monkey-Near-The-Giant-Monkey-Head-Animated-GIF-Sprite.gif" alt="Monkey Island monkey" /></p>
-  
+        </span>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-lg-6 col-md-12 mx-auto mb-3">
+        
+      </div>
+      <div class="col-lg-6 col-md-12 mx-auto mb-3">
+        
+      </div>
     </div>
   </div>
-</div>
+</article>
+
 
 
 <footer>
@@ -288,7 +312,7 @@ article .tags a:hover .dot {
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
 <script>
-  $('#gallerybg').geopattern('About');
+  $('#gallerybg').geopattern('How to zip files and folders in Linux');
 </script>
 
 
@@ -303,3 +327,6 @@ article .tags a:hover .dot {
 
 </body>
 </html>
+
+
+

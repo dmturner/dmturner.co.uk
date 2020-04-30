@@ -1,0 +1,60 @@
+{{ partial "header.html" . }}
+
+
+
+<!-- Page Header -->
+<header id="gallerybg" class="masthead post-gallery">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-heading">
+          <h1>{{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}</h1>
+          <!-- <h2 class="subheading"></h2> -->
+          <span class="meta">
+            {{ if .Params.date }} {{ dateFormat "January 2, 2006" .Date }} · {{ .ReadingTime }} minute read {{ end }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto single-post-content">
+        {{ .Content }}
+      </div>
+    </div>
+    <div class="row mt-5 mb-5">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <span class="meta tags">
+          {{ partial "tags.html" . }}
+        </span>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-lg-6 col-md-12 mx-auto mb-3">
+        {{ if .PrevInSection }}
+        <span class="meta previous">
+          <a class="btn btn-primary btn-block" href="{{.PrevInSection.Permalink}}">&laquo; {{.PrevInSection.Title}}</a>
+        </span>
+        {{ end }}
+      </div>
+      <div class="col-lg-6 col-md-12 mx-auto mb-3">
+        {{ if .NextInSection }}
+        <span class="meta next">
+          <a class="btn btn-primary btn-block" href="{{.NextInSection.Permalink}}">{{.NextInSection.Title}} &raquo;</a>
+        </span>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</article>
+
+
+{{ partial "footer.html" . }}
+
+
