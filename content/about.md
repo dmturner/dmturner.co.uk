@@ -16,18 +16,20 @@ In the 20 years since, I've seen scores of web technologies come and go but I co
 
 When I'm not writing code I'm usually watching/thinking/reading about:
 
-* Web development :computer:
-* Rallying :car:
-* Photography :camera:
-* Electronics :battery:
-* Amateur radio :radio:
+- Web development :computer:
+- Rallying :car:
+- Photography :camera:
+- Electronics :battery:
+- Amateur radio :radio:
 
 ##### This website
 
-This site is built using [Hugo](https://gohugo.io/), a static site generator written in [Go](https://golang.org/). The site deploys from a git [repository on GitHub](https://github.com/dmturner/dmturner.co.uk) where it's then built and hosted using [Netlify](https://app.netlify.com/sites/dmturner/deploys).
+This site is built using [Hugo](https://gohugo.io/), a static site generator written in [Go](https://golang.org/). The site deploys from a [git repository on GitHub](https://github.com/dmturner/dmturner.co.uk) where it's then built and hosted using [Netlify](https://app.netlify.com/sites/dmturner/deploys).
 
-Continuous deployment means that I can push any changes to the repository and have Netlify automatically detect the change, build and deploy the amends - usually within 30 seconds of me pushing the commits. Awesome!
+Continuous deployment means that I can push any changes to the repository and have Netlify automatically detect the change, build the new content and deploy the new code - usually within 30 seconds of me pushing the commits. Awesome!
 
-All blog post content is written in [Markdown](https://en.wikipedia.org/wiki/Markdown) which makes it easy to write and style content. It's also handy for making sure content is future-proof by not being tied to any particular CMS.
+All blog post content is written in [Markdown](https://en.wikipedia.org/wiki/Markdown) which makes it easy to write and style content. It's also handy for making sure content is future-proof by not being tied to any particular CMS or database.
+
+I occasionally use [Forestry](https://forestry.io/) as a way to add content to the site through a CMS, although when you're writing content in Markdown it's easy to do that from your code editor or a terminal window.
 
 ![Monkey Island monkey](/uploads/Animated-GIF-The-Secret-of-Monkey-Island-Character-Hanging-Monkey-Near-The-Giant-Monkey-Head-Animated-GIF-Sprite.gif)
