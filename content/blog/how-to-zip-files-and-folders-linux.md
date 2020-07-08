@@ -63,3 +63,7 @@ man zip
 ```
 
 The `zip` command is especially useful for archiving log files or compressing entire directories so that they can be downloaded or transferred across servers. Give it a go!
+
+[Home](http://calaveracreative.co.uk)
+
+[Contact](http://calaveracreative.co.uk/contact)
