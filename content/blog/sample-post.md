@@ -1,6 +1,6 @@
 ---
-title: "Sample Post"
-date: 2020-05-10T12:59:44+01:00
+title: "This is a sample post."
+date: 2020-10-05T12:59:44+01:00
 draft: true
 tags: 
 - 

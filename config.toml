@@ -7,8 +7,10 @@ languagecode = "en-gb"
 
 enableEmoji = true
 
+
 # [permalinks]
 #   blog = "/:title/"
+
 
 pygmentsstyle       = "monokai"
 pygmentscodefences  = true
