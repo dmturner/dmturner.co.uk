@@ -4,8 +4,8 @@ author = "David Turner"
 canonifyurls = true
 languagecode = "en-gb"
 enableEmoji = true
-pygmentsstyle = "monokai"
-pygmentscodefences = true
+#pygmentsstyle = "monokai"
+#pygmentscodefences = true
 disqusShortname = "dmturner"
 
 [params]
@@ -25,4 +25,18 @@ disqusShortname = "dmturner"
 [[menu.main]]
     name = "About"
     url  = "/about"
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
     
