@@ -10,7 +10,7 @@ tags:
 
 It's useful to know how to compress a file or folder using the terminal for those times that you're working remotely on a server and don't have access to the usual desktop compression tools. We can use the `zip` command to do this.
 
-If you don't already have `zip` installed, then you can grab it using the appropriate package manager for your current distribution:
+You'll likely already have `zip` installed as part of your chosen distribution. If you don't have it then you can grab it using the appropriate package manager:
 
 ##### Ubuntu
 
