@@ -2,6 +2,6 @@
 
 # dmturner.co.uk
 
-Website and blog of David Turner; a full-stack web developer based in Lancashire, UK.
+This is the website and blog of David Turner; a full-stack web developer based in Lancashire, UK.
 
 Built with Hugo. Deployed with Netlify.
