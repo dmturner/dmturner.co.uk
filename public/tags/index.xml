@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on D.M. Turner</title>
+    <title>Tags on David Turner - Full-stack web developer</title>
     <link>https://dmturner.co.uk/tags/</link>
-    <description>Recent content in Tags on D.M. Turner</description>
+    <description>Recent content in Tags on David Turner - Full-stack web developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
+    <lastBuildDate>Fri, 17 Apr 2020 21:03:28 +0000</lastBuildDate><atom:link href="https://dmturner.co.uk/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dev-ops</title>
+      <link>https://dmturner.co.uk/tags/dev-ops/</link>
+      <pubDate>Fri, 17 Apr 2020 21:03:28 +0000</pubDate>
+      
+      <guid>https://dmturner.co.uk/tags/dev-ops/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="https://dmturner.co.uk/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linux</title>
+      <link>https://dmturner.co.uk/tags/linux/</link>
+      <pubDate>Fri, 17 Apr 2020 21:03:28 +0000</pubDate>
+      
+      <guid>https://dmturner.co.uk/tags/linux/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>terminal</title>
+      <link>https://dmturner.co.uk/tags/terminal/</link>
+      <pubDate>Fri, 17 Apr 2020 21:03:28 +0000</pubDate>
+      
+      <guid>https://dmturner.co.uk/tags/terminal/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
