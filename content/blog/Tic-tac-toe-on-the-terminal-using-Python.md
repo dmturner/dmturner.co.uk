@@ -7,13 +7,13 @@ tags:
 - programming
 ---
 
-18 years ago I was tasked with writing a tic-tac-toe game for my computing coursework. The allocated programming language was [Visual Basic](https://en.wikipedia.org/wiki/Visual_Basic).
+20 something years ago I was tasked with writing a Tic-Tac-Toe game for my A-level computing coursework at college. The allocated programming language was [Visual Basic](https://en.wikipedia.org/wiki/Visual_Basic).
 
 For reasons that mainly involved [Counter-Strike](https://en.wikipedia.org/wiki/Counter-Strike_(video_game)) I didn't finish the tic-tac-toe code and it's bugged me ever since.
 
 So here's an attempt to finish what I started all those years ago, albeit in a much more elegant language - Python.
 
-For some reason I've taken to calling this game tic-tac-toe although I grew up calling it noughts and crosses. So take your pick.
+For some reason I've taken to calling this game Tic-Tac-Toe, although I grew up calling it Noughts and Crosses. So take your pick.
 
 ```python
 import random
