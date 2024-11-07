@@ -10,9 +10,9 @@ Hi :wave:, I'm a freelance full-stack web developer based in Lancashire, UK.
 
 I specialise in building easy-to-use CMS powered websites, with a particular focus on the housing sector, to drive leads and sales for my clients.
 
-I've been making things appear on the web since 1999 when I took my first steps into web development by writing a few lines of HTML in Notepad that resulted in an image of a [Monkey Island](https://en.wikipedia.org/wiki/Monkey_Island_(series)) character appearing in Internet Explorer. Many [LucasArts](https://en.wikipedia.org/wiki/LucasArts) inspired fan sites soon followed once I'd figured out how to actually put text and images online - [GeoCities](https://en.wikipedia.org/wiki/Yahoo!_GeoCities) anyone?
+I've been making things appear on the web since the '90s when I took my first steps into web development by writing a few lines of HTML in Notepad that resulted in an image of a [Monkey Island](https://en.wikipedia.org/wiki/Monkey_Island_(series)) character appearing in Internet Explorer. Many [LucasArts](https://en.wikipedia.org/wiki/LucasArts) inspired fan sites soon followed once I'd figured out how to actually put text and images online - [GeoCities](https://en.wikipedia.org/wiki/Yahoo!_GeoCities) anyone?
 
-In the 20 years since, I've seen plenty of web technologies rise and fall but I continue to strive to keep up to date with the many languages, frameworks and codes of best practice that make up the modern web.
+In the 20-odd years since, I've seen plenty of web technologies rise and fall but I continue to strive to keep up to date with the many languages, frameworks and codes of best practice that make up the modern web.
 
 When I'm not writing code I'm usually watching/thinking/reading about:
 
