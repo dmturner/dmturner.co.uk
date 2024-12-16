@@ -16,7 +16,7 @@ In the 20-something years since, I've seen plenty of web technologies rise and f
 
 When I'm not writing code or re-writing dotfiles, I'm usually thinking about:
 
-- :elephant: PHP
+- :elephant: PHP & Laravel
 - :penguin: Linux
 - :battery: Electronics
 - :radio: Amateur radio
