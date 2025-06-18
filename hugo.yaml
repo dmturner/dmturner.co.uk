@@ -58,18 +58,18 @@ params:
 
   # profile-mode
   profileMode:
-    enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
+    enabled: true # needs to be explicitly set
+    title: David Turner
+    subtitle: "Full-stack web developer. Based in Lancashire, UK."
+    imageUrl: "/img/me-green.jpg"
+    imageWidth: 200
+    imageHeight: 200
     imageTitle: my image
     buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
+      - name: About
+        url: about
+      - name: Blog
+        url: blog
 
   # home-info mode
   homeInfoParams:
