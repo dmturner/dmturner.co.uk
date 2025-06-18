@@ -61,7 +61,7 @@ params:
     enabled: true # needs to be explicitly set
     title: David Turner
     subtitle: "Full-stack web developer. Based in Lancashire, UK."
-    imageUrl: "/img/me-gameboy.jpg"
+    imageUrl: "/img/me-green.jpg"
     imageWidth: 200
     imageHeight: 200
     imageTitle: my image
