@@ -1,7 +1,0 @@
-
-<!-- layouts/partials/tags.html -->
-<hr>
-<div class="mb-3">Tagged with:</div>
-{{ range $name, $items := .Site.Taxonomies.tags }}
-<a class="mb-1 btn btn-secondary" href="{{ $.Site.BaseURL }}tags/{{ $name | urlize | lower  }}">#{{ $name }}</a>
-{{ end }}
