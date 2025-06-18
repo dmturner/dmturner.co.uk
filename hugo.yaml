@@ -22,16 +22,16 @@ params:
   author: David
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
-  DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
+  DateFormat: "Monday 1 January, 2006"
+  defaultTheme: dark # dark, light
   disableThemeToggle: false
 
-  ShowReadingTime: true
+  ShowReadingTime: false
   ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
-  ShowWordCount: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
   disableSpecial1stPost: false
@@ -61,7 +61,7 @@ params:
     enabled: true # needs to be explicitly set
     title: David Turner
     subtitle: "Full-stack web developer. Based in Lancashire, UK."
-    imageUrl: "/img/me-green.jpg"
+    imageUrl: "/img/me-gameboy.jpg"
     imageWidth: 200
     imageHeight: 200
     imageTitle: my image
