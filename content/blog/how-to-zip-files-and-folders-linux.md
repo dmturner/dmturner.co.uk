@@ -1,6 +1,7 @@
 ---
 title: How to zip files and folders in Linux
 date: 2020-04-17T21:03:28.000+00:00
+draft: true
 tags:
 - linux
 - dev-ops
