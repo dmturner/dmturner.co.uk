@@ -148,14 +148,6 @@ markup:
     # lineNos: true
     style: dracula
 
-outputs:
-  home:
-    - HTML
-    - Headers
-  page:
-    - HTML
-    - Headers
-
 mediaTypes:
   "text/netlify":
     suffixes: ["headers"]
@@ -167,3 +159,11 @@ outputFormats:
     isPlainText: true
     notAlternative: true
     permalinkable: false
+
+outputs:
+  home:
+    - HTML
+    - Headers
+  page:
+    - HTML
+    - Headers
