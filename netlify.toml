@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "hugo"
+  command = "hugo && mv public/_headers.txt public/_headers"
 
 [build.environment]
   HUGO_VERSION = "0.147.8" # Change this to the version you need

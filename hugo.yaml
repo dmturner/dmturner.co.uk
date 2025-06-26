@@ -148,22 +148,24 @@ markup:
     # lineNos: true
     style: dracula
 
-mediaTypes:
-  "text/netlify":
-    suffixes: ["headers"]
+
+
+module:
+  mounts:
+    - source: "layouts/static"
+      target: "static"
+
 
 outputFormats:
-  Headers:
-    mediaType: "text/netlify"
+  HEADERS:
     baseName: "_headers"
-    isPlainText: true
-    notAlternative: true
-    permalinkable: false
+    mediaType: "text/plain"
 
 outputs:
-  home:
-    - HTML
-    - Headers
-  page:
-    - HTML
-    - Headers
+  home: ["HTML", "HEADERS"]
+  page: ["HTML", "HEADERS"]
+
+
+mediaTypes:
+  text/headers:
+    suffixes: [headers]
