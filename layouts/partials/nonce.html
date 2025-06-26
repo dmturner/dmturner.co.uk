@@ -1,0 +1,2 @@
+{{ $nonce := delimit (shuffle (seq 1 16)) "" | base64Encode }}
+{{ .Scratch.Set "nonce" $nonce }}

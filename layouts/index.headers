@@ -1,4 +1,6 @@
-{{ $nonce := delimit (shuffle (seq 1 16)) "" | base64Encode }}
+{{ partial "nonce.html" . }}
+
+{{ $nonce := .Scratch.Get "nonce" }}
 
 {{- range .Site.Pages }}
 {{ .RelPermalink }}
