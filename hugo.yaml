@@ -156,14 +156,16 @@ module:
       target: "static"
 
 
-outputFormats:
-  HEADERS:
-    baseName: "_headers"
-    mediaType: "text/plain"
-
 outputs:
   home: ["HTML", "HEADERS"]
-  page: ["HTML", "HEADERS"]
+
+outputFormats:
+  Headers:
+    baseName: "_headers"  # Remove the .txt extension
+    mediaType: "text/plain"
+    notAlternative: true
+
+
 
 
 mediaTypes:
