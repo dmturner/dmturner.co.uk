@@ -147,3 +147,23 @@ markup:
     guessSyntax: true
     # lineNos: true
     style: dracula
+
+outputs:
+  home:
+    - HTML
+    - Headers
+  page:
+    - HTML
+    - Headers
+
+mediaTypes:
+  "text/netlify":
+    suffixes: ["headers"]
+
+outputFormats:
+  Headers:
+    mediaType: "text/netlify"
+    baseName: "_headers"
+    isPlainText: true
+    notAlternative: true
+    permalinkable: false
