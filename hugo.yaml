@@ -150,24 +150,16 @@ markup:
 
 
 
-module:
-  mounts:
-    - source: "layouts/static"
-      target: "static"
 
+
+outputFormats:
+  HEADERS:
+    baseName: "_headers"
+    mediaType: "text/plain"
 
 outputs:
   home: ["HTML", "HEADERS"]
 
-outputFormats:
-  Headers:
-    baseName: "_headers"  # Remove the .txt extension
-    mediaType: "text/plain"
-    notAlternative: true
-
-
-
-
 mediaTypes:
   text/headers:
-    suffixes: [headers]
+    suffixes: [""]  # Was [headers] - this caused .txt extension
