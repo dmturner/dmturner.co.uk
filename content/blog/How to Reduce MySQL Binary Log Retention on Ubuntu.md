@@ -8,8 +8,6 @@ tags:
 - terminal
 ---
 
-# How to Reduce MySQL Binary Log Retention on Ubuntu
-
 I recently had an issue with a client's Ubuntu server where MySQL binary log files were taking up a considerable amount of disk space. In this case, they had accumulated to around 14GB, which was becoming a concern on a server with a relatively small disk.
 
 Binary logs (binlogs) record changes made to a MySQL database. They're useful for replication and point-in-time recovery, but if they're retained for longer than necessary, they can gradually consume a surprising amount of storage.
